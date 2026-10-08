@@ -1,4 +1,4 @@
-# PRCE-001 Medical Data History
+# Medical Data History
 
 This repository contains the project files, environment configurations, and analytical SQL scripts for the Medical Data History project.
 
@@ -9,18 +9,16 @@ This repository contains the project files, environment configurations, and anal
 * **`Medical_data_History_Project_Report.docx`**: The formal project document containing the challenges report and complete SQL script[cite: 3].
 
 ---
-
 ## 🚀 Getting Started with Docker
 
 To build and run the local MySQL environment using Docker:
-
 1. Build the Docker image:
    ```bash
    docker build -t medical-sql-env .
-
-Run the MySQL container:
+2. Run the MySQL container:
    ```bash
    docker run --name medical-mysql -d -p 3306:3306 medical-sql-env .
+----
 🛠️ Summary of Challenges Faced
 Environment Compatibility & Extension Routing in VS Code: Resolved shortcut and file-linking conflicts between multiple database extensions (SQLTools vs. MSSQL) by configuring explicit default runners and connection bindings.
 
