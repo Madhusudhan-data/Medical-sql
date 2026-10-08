@@ -19,9 +19,10 @@ To build and run the local MySQL environment using Docker:
    ```bash
    docker run --name medical-mysql -d -p 3306:3306 medical-sql-env .
 ----
-🛠️ Summary of Challenges Faced
-Environment Compatibility & Extension Routing in VS Code: Resolved shortcut and file-linking conflicts between multiple database extensions (SQLTools vs. MSSQL) by configuring explicit default runners and connection bindings.
+🛠️ Summary of Challenges Faced:
 
-Container Port Mapping & Authentication Mismatch: Cleared Docker bridge mismatch errors and modern MySQL authentication plugin rejections by setting standard environmental credentials (MYSQL_ROOT_PASSWORD) and explicit port routing.
+* Environment Compatibility & Extension Routing in VS Code: Resolved shortcut and file-linking conflicts between multiple database extensions (SQLTools vs. MSSQL) by configuring explicit default runners and connection bindings.
 
-Remote User Permission Restrictions: Documented and understood read-only policy constraints (UPDATE command denied) when connecting to shared cloud academic servers (projects.datamites.com).
+* Container Port Mapping & Authentication Mismatch: Cleared Docker bridge mismatch errors and modern MySQL authentication plugin rejections by setting standard environmental credentials (MYSQL_ROOT_PASSWORD) and explicit port routing.
+
+* Remote User Permission Restrictions: Documented and understood read-only policy constraints (UPDATE command denied) when connecting to shared cloud academic servers (projects.datamites.com).
