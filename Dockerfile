@@ -1,0 +1,4 @@
+﻿FROM mysql:latest
+ENV MYSQL_ROOT_PASSWORD=your_secure_password
+ENV MYSQL_DATABASE=project_medical_data_history
+EXPOSE 3306
